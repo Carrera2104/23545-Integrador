@@ -1,0 +1,494 @@
+html{
+    font-size: 62.5%;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+a:hover{
+    color: white;
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto auto auto auto auto;
+}
+
+/*Etiqueta nav*/
+
+nav{
+    grid-column: span 12;
+    display: flex;
+    background-color: #333A40;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+nav div picture img{
+    max-width: 100px;
+}
+
+nav div p{
+    color: white;
+    font-size: 17px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+nav div{
+    flex-grow: 1;
+}
+
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+nav ul li a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: grey;
+}
+
+nav ul li:last-child a{
+    color: #2CA244;
+}
+
+/*Etiqueta seccion de Calle*/
+
+#calle{
+    grid-column: span 12;
+    grid-row: 2;
+    background-image: url(../Imágenes/ba1.jpg);
+    /* filter: brightness(0.5); */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+#calle div.caja{
+    grid-column: 2;
+    grid-row: 2;
+    padding: 1rem;
+    margin-right: 8rem;
+}
+
+#calle div p{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 1.8rem;
+    text-align: right;
+    font-weight: bold;
+    font-weight: 450;
+}
+
+#calle div p:first-child{
+    font-size: 3rem;
+    font-weight: bold;
+    font-weight: 600;
+}
+
+.botones{
+    text-align: end;
+}
+
+.botones input:first-child{
+    background-color: rgba(33, 30, 212, 0);
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: white solid 1px;
+    color: white;
+}
+
+.botones input:last-child{
+    font-size: 2rem;
+    border-radius: 5px;
+    background-color: #29A744;
+    color: white;
+    margin: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    border: #29A744;
+}
+
+/*Estilos de oradores*/
+
+.oradores{
+    grid-row: 3;
+    grid-column: 3 / 11;
+    margin-bottom: 2rem;
+}
+
+.título{
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.título span{
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-weight: 500;
+}
+
+.card-group{
+    gap: 2rem;
+}
+
+.card-body{
+    padding: 1.5rem;
+}
+
+.card-body h5{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card-text{
+    font-size: 1.2rem;
+}
+
+.logo_java{
+    color: black;
+    display: inline-block;
+    background-color: #FEC107;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1px 5px;
+    border-radius: 5px;
+    margin: 0 1px;
+    margin-top: 1.5rem;
+}
+
+.logo_react{
+    color: white;
+    display: inline-block;
+    background-color: #18A3BA;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1px 5px;
+    border-radius: 5px;
+    margin: 0 1px;
+    margin-top: 1.5rem;
+}
+
+.logo_negocios{
+    color: white;
+    display: inline-block;
+    background-color: #6C757E;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1px 5px;
+    border-radius: 5px;
+    margin: 0 1px;
+    margin-top: 1.5rem;
+}
+
+.logo_startups{
+    color: white;
+    display: inline-block;
+    background-color: #DB3646;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1px 5px;
+    border-radius: 5px;
+    margin: 0 1px;
+    margin-top: 1.5rem;
+}
+
+/*Estilos de playa*/
+
+.playa{
+    grid-row: 4;
+    grid-column: span 12;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.playa picture{
+    grid-row: 1;
+    grid-column: 1 / 6;
+}
+
+.playa picture img{
+   width: 120%;
+   margin-right: 1px;
+}
+
+.playa div{
+    grid-row: 1;
+    grid-column: 7 / 13;
+    background-color: #353A40;
+    margin-left: 1px;
+    padding: 2rem 1rem;
+}
+
+.playa div p:first-child{
+    color: white;
+    font-size: 2.3rem;
+    font-weight: bold;
+    font-weight: 600;
+}
+
+.playa div p.texto{
+    color: white;
+    font-size: 1.3rem;
+}
+
+.playa div input{
+    background-color: rgba(33, 30, 212, 0);
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: white solid 1px;
+    color: white;
+}
+
+/*Estilos para formulario*/
+
+.formulario{
+    grid-row: 5;
+    grid-column: 4 / 10;
+}
+
+.formulario p{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.formulario p:first-child{
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.formulario p:first-child span{
+    font-size: 2.4rem;
+    font-weight: bold;
+    font-weight: 500;
+}
+
+.formulario p:nth-child(2){
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+
+.formulario p:nth-child(2) span{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.col input{
+    font-size: 1.5rem;
+}
+
+.comentario{
+    font-size: 2rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.formulario form div p{
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: left;
+    color: gray;
+}
+
+.enviar input{
+    width: 100%;
+    background-color: #96C93E;
+    border: #96C93E;
+    border-radius: 3px;
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+/*Tickets*/
+
+.ticket{
+    grid-row: 6;
+    grid-column: 4 / 10;
+    margin-top: 2rem;
+}
+
+.descuento{
+    display: flex;
+    gap: 0.3rem;
+    justify-content: space-between;
+}
+
+.descuento div{
+    height: 20rem;
+    width: 22rem;
+    border: 2px solid blue;
+}
+
+.descuento div:nth-child(3){
+    border: 2px solid #FFC107;
+}
+
+.descuento div h2{
+    font-size: 2rem;
+    font-weight: 650;
+    text-align: center;
+    padding: 1.8rem 0;
+}
+
+.descuento div h3{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.descuento div h4{
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 650;
+    padding: 1.8rem 0;
+}
+
+.descuento div h5{
+    font-size: 1.8rem;
+    text-align: center;
+    color: gray;
+    font-size: 1.5rem;
+}
+
+.ticket p{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.ticket h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+#persona{
+    display: flex;
+    justify-content: space-between;
+}
+
+#nombre{
+    width: 49%;
+}
+
+#apellido{
+    width: 49%;
+}
+
+.ticket div input{
+    font-size: 1.8rem;
+}
+
+#correo{
+    margin: 1rem 0;
+}
+
+#cantidad_y_categoria{
+    display: flex;
+    justify-content: space-between;
+}
+
+#cantidad_y_categoria div{
+    width: 49%;
+}
+
+#cantidad_y_categoria div p{
+    text-align: left;
+    margin-top: 0.8rem;
+    margin-bottom: 0.6rem;
+}
+
+#cantidad_y_categoria div input{
+    width: 100%;
+}
+
+#cantidad_y_categoria div select{
+    width: 100%;
+    font-size: 1.8rem;
+}
+
+.total{
+    background-color: #CCE5FF;
+    margin: 3rem 0;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+}
+
+.total p{
+    font-size: 1.8rem;
+    color: #004085;
+    text-align: left;
+    margin: 0;
+    font-weight: 500;
+}
+
+#borrar_y_resumen{
+    display: flex;
+    justify-content: space-between;
+}
+
+#borrar_y_resumen div{
+    width: 49%;
+}
+
+#borrar_y_resumen div input{
+    width: 100%;
+    background-color: #96C93E;
+    border: #96C93E;
+    border-radius: 3px;
+    color: white;
+    font-size: 1.7rem;
+    padding: 1rem;
+}
+
+/*Estilos para footer*/
+
+footer{
+    grid-row: 7;
+    grid-column: span 12;
+    margin-top: 2rem;
+    background-color: #1D4255;
+}
+
+
+footer ul{
+    display: flex;
+    margin: 0;
+    padding: 2rem 0;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+
+footer ul li{
+    text-align: center;
+}
+
+footer ul li a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: white;
+}

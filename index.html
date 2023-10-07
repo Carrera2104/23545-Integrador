@@ -1,11 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trabajo Practico Integrador Front End</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/index.css">
 </head>
 <body>
-    
+    <nav>
+        <div>
+            <picture>
+                <img src="./Imágenes/codoacodo.png" alt="Logo">
+            </picture>
+            <p>Conf Bs As</p>
+        </div>
+        <ul>
+            <li>
+                <a href="">La conferencia</a>
+            </li>
+            <li>
+                <a href="">Los oradores</a>
+            </li>
+            <li>
+                <a href="">El lugar y la fecha</a>
+            </li>
+            <li>
+                <a href="">Conviértete en orador</a>
+            </li>
+            <li>
+                <a href="">Comprar tickets</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="calle">
+        <div class="caja">
+            <p>Conf Bs As</p>
+            <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+            <div class="botones">
+                <input type="submit" value="Quiero ser orador">
+                <input type="submit" value="Comprar tickets">
+            </div>
+        </div>
+    </section>
+    <div class="oradores">
+        <div class="título">
+            CONOCE A LOS<br><span>ORADORES</span>
+        </div>
+        <div class="card-group">
+            <div class="card">
+                <img src="./Imágenes/steve.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="logo_java">JavaScript</p>
+                    <p class="logo_react">React</p>
+                    <h5 class="card-title">Steve Jobs</h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit consequuntur quis debitis iusto deserunt, tenetur incidunt odit magni enim repudiandae, minima explicabo placeat cumque temporibus aut quos perspiciatis recusandae ipsam!.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Imágenes/bill.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="logo_java">JavaScript</p>
+                    <p class="logo_react">React</p>
+                    <h5 class="card-title">Bill Gates</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ex quod iure aliquam sapiente voluptatem numquam natus at explicabo accusamus rem, debitis velit eveniet. Vero illo odio impedit aut et.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Imágenes/ada.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="logo_negocios">Negocios</p>
+                    <p class="logo_startups">Startups</p>
+                    <h5 class="card-title">Ada Lovelace</h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates iste, officia enim aut non inventore ratione alias quo consequatur quam voluptatum perspiciatis distinctio mollitia voluptatibus esse consequuntur cumque exercitationem eum!</p>
+                </div>
+            </div>
+         </div>
+    </div>
+    <section class="playa">
+        <picture>
+            <img src="./Imágenes/honolulu.jpg" alt="Playa">
+        </picture>
+        <div>
+            <p>Bs As - Octubre</p>
+            <p class="texto">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).</p>
+            <input type="submit" value="Conocé más">
+        </div>
+    </section>
+    <div class="formulario">
+        <p>CONVIÉRTETE EN UN<br><span>ORADOR</span></p>
+        <P>Anotate como orador para dar una <span>charla ignite</span>. Cuéntanos de qué quieres hablar!</P>
+        <form action="" method="POST">
+            <div class="row g-3">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                </div>
+                <div>
+                    <textarea class="comentario" name="Comentario" id="Comentario" placeholder="Sobre que quieres hablar" rows="4"></textarea>
+                </div>
+                <p>Recuerda incluir un título para tu charla</p>
+              </div>
+              <div class="enviar">
+                <input type="submit" value="Enviar">
+              </div>
+        </form>
+    </div>
+    <form class="ticket" action="" method="POST">
+        <div class="descuento">
+            <div id="Estudiante">
+                <h2>Estudiante</h2>
+                <h3>Tienen un descuento</h3>
+                <h4>80%</h4>
+                <h5>* presentar documentación</h5>
+            </div>
+            <div id="Trainee">
+                <h2>Trainee</h2>
+                <h3>Tienen un descuento</h3>
+                <h4>50%</h4>
+                <h5>* presentar documentación</h5>
+            </div>
+            <div id="Junior">
+                <h2>Junior</h2>
+                <h3>Tienen un descuento</h3>
+                <h4>15%</h4>
+                <h5>* presentar documentación</h5>
+            </div>
+        </div>
+        <p>VENTA</p>
+        <h2>VALOR DE TICKET $200</h2>
+        <div id="persona">
+            <div id="nombre">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+            </div>
+            <div id="apellido">
+                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+            </div>
+        </div>
+        <div id="correo">
+            <input type="text" class="form-control" placeholder="Correo" aria-label="Correo">
+        </div>
+        <div id="cantidad_y_categoria">
+            <div>
+                <p>Cantidad</p>
+                <input id="cantidad" type="number" min="0" class="form-control" placeholder="Cantidad" aria-label="Cantidad">
+            </div>
+            <div>
+                <p>Categoria</p>
+                <select id="categoria" class="form-select" aria-label="Default select example">
+                    <option value="1" selected>Estudiante</option>
+                    <option value="2">Trainee</option>
+                    <option value="3">Junior</option>
+                </select>
+            </div>
+        </div>
+        <div class="total">
+            <p id="pago">Total a Pagar: $</p>
+        </div>
+        <div id="borrar_y_resumen">
+            <div>
+                <input id="reset" type="reset" value="Borrar">
+            </div>
+            <div>
+                <input id="resumen" type="button" value="Resumen">
+            </div>
+        </div>
+    </form>
+    <footer>
+        <ul>
+            <li>
+                <a href="">Preguntas<br>frecuentes</a>
+            </li>
+            <li>
+                <a href="">Contáctanos</a>
+            </li>
+            <li>
+                <a href="">Prensa</a>
+            </li>
+            <li>
+                <a href="">Conferencias</a>
+            </li>
+            <li>
+                <a href="">Términos y<br>condiciones</a>
+            </li>
+            <li>
+                <a href="">Privacidad</a>
+            </li>
+            <li>
+                <a href="">Estudiantes</a>
+            </li>
+        </ul>
+    </footer>
 </body>
 </html>
